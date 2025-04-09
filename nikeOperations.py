@@ -15,6 +15,11 @@ def encontrarCalve():
     clave = input("Ingrese la clave: ")
     if clave in datos:
         print("Clave encontrada")
+        print("________________")
+        nuevoValor = input("Que valor le quieres dar a la clave: ")
+        datos[clave] = nuevoValor
+        print("",datos.values())
+
     else:
         print("La clave no existe")
 
