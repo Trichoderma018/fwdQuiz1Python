@@ -74,7 +74,7 @@ def menu():
         
         opcion = input("Seleccione una opción (1-3): ")  # Capturar la opción del usuario
         
-        # Estructura if-elif en lugar de match-case
+        # Validaciones para las opciones
         if opcion == "1":
             mostrarMensaje()
         elif opcion == "2":
@@ -86,5 +86,14 @@ def menu():
             print("\nERROR: Invalida. Por favor, ingrese 1, 2 o 3.\n")
 
 # Este bloque debe estar FUERA de la función menu
-if __name__ == "__main__":
-    menu()
+#Explicacion:
+"""
+    Cuando intentas ejecutar solo con main() al final del código,
+    no funcionará porque en Python las funciones deben ser definidas antes de ser llamadas. 
+    Sin embargo, hay una razón más importante por la que esto no funciona correctamente.
+    En Python, cuando escribes un archivo con código, este se ejecuta de arriba hacia abajo. El código:
+"""
+# if __name__ == "__main__":
+#     menu()
+
+menu()
